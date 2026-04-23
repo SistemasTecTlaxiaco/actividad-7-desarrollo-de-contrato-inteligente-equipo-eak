@@ -1,4 +1,4 @@
-# 📑 Sprint 3: Desarrollo y Despliegue de Contratos Inteligentes
+# Sprint 3: Desarrollo y Despliegue de Contratos Inteligentes
 
 ## 📌 Definición del Sprint
 
