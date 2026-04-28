@@ -1,6 +1,6 @@
 # Sprint 3: Desarrollo y Despliegue de Contratos Inteligentes
 
-## 📌 Definición del Sprint
+##  Definición del Sprint
 
 En este sprint se desarrollará un contrato inteligente utilizando Soroban sobre la red Stellar Testnet.
 
@@ -10,7 +10,7 @@ Se busca que el contrato sea completamente funcional, que pueda ser desplegado e
 
 ---
 
-## ✅ Criterios de Aceptación
+## Criterios de Aceptación
 
 - El contrato inteligente compila sin errores.
 - La lógica del contrato permite registrar y consultar servicios.
@@ -23,7 +23,7 @@ Se busca que el contrato sea completamente funcional, que pueda ser desplegado e
 
 ---
 
-## ⚙️ Configuración del Entorno
+##  Configuración del Entorno
 
 Para el desarrollo del contrato inteligente se configuró el siguiente entorno:
 
