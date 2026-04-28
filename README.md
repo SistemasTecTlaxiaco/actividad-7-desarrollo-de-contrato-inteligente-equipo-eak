@@ -1,125 +1,123 @@
-# 📑 Sprint 3 - LOC-SERV: Contrato Inteligente en Soroban
+#  Sprint 3 - Implementación de Contrato Inteligente (LOC-SERV)
 
-##  Definición del Sprint
+##  Enfoque del Sprint
 
-El objetivo principal de este sprint es lograr el desarrollo y despliegue de un Smart Contract funcional en la red de prueba (TestNet) de Stellar, así como su integración con una aplicación externa para la plataforma LOC-SERV.
+Durante este sprint se desarrollará un contrato inteligente utilizando Soroban sobre la red de prueba de Stellar (TestNet), con el propósito de integrar funcionalidades Web3 dentro de la plataforma LOC-SERV.
 
-Se busca que el sistema sea capaz de:
+La intención es construir una solución que permita gestionar servicios de forma descentralizada, asegurando que la información registrada sea transparente, verificable y persistente en blockchain.
 
-- Registrar servicios en blockchain
-- Consultar información almacenada de manera descentralizada
-- Interactuar correctamente con la red TestNet
-- Permitir interacción mediante una interfaz web o scripts
-- Validar operaciones mediante transacciones verificables
+Con este desarrollo se pretende:
 
----
-
-##  Despliegue del Smart Contract (TestNet)
-
-El contrato inteligente será desplegado en la red TestNet de Stellar utilizando Soroban.
-
-- Red: TestNet  
-- Estado: En desarrollo / Activo  
-- Contract ID: (Agregar aquí el ID cuando lo despliegues)
-
-El contrato podrá ser verificado en el explorador de bloques, donde se podrán consultar:
-
-- Transacciones realizadas  
-- Estado del contrato  
-- Interacciones con la red  
-
-Esto asegura que el contrato funciona en un entorno real y no depende de ejecución local.
+- Registrar servicios directamente en la blockchain  
+- Consultar la información almacenada en cualquier momento  
+- Ejecutar operaciones mediante transacciones reales en TestNet  
+- Permitir la conexión con una aplicación externa (frontend o scripts)  
 
 ---
 
-##  Descripción del Contrato
+##  Implementación en la Red de Prueba
 
-Se desarrollará un contrato inteligente orientado al registro de servicios dentro de la plataforma LOC-SERV.
+El contrato será preparado para su despliegue en la red TestNet de Stellar, lo que permitirá validar su funcionamiento en un entorno real sin afectar redes productivas.
 
-El contrato permitirá:
+**Detalles del despliegue:**
 
-- Registrar servicios con información básica
-- Almacenar datos en la blockchain
-- Consultar servicios registrados
-- Garantizar integridad de la información
+- Red: Stellar TestNet  
+- Estado: En proceso / Desplegado  
+- Identificador del contrato: (Se agregará posteriormente)
 
----
-
-## Funciones Implementadas
-
-- register_service → Registrar un servicio  
-- get_service → Consultar un servicio específico  
-- get_all_services → Obtener todos los servicios registrados  
+Una vez desplegado, será posible verificar su actividad mediante herramientas externas como exploradores de blockchain, donde se reflejarán las interacciones realizadas.
 
 ---
 
-##  Criterios de Aceptación
+##  Descripción General del Contrato
 
-### 🔹 Lógica del Contrato
-- Implementación correcta del registro de servicios  
-- Estructura clara del código  
-- Uso de almacenamiento persistente  
-- Validación de datos antes de guardarlos  
+El contrato inteligente estará enfocado en la gestión de servicios dentro de LOC-SERV, funcionando como un sistema de almacenamiento descentralizado.
+
+Permitirá:
+
+- Registrar nuevos servicios con datos básicos  
+- Mantener un historial de registros  
+- Consultar servicios previamente almacenados  
+- Garantizar que la información no sea alterada  
+
+---
+
+##  Operaciones Principales
+
+El contrato contemplará funciones como:
+
+- Alta de servicios  
+- Consulta individual de registros  
+- Recuperación de información almacenada  
+
+---
+
+##  Condiciones para Validación
+
+### 🔹 Funcionamiento
+- El contrato debe compilar correctamente  
+- Debe permitir registrar información sin errores  
+- Debe responder correctamente a consultas  
+- La lógica debe ser clara y funcional  
 
 ### 🔹 Seguridad
-Se aplicarán buenas prácticas de seguridad en blockchain:
+Se considerarán aspectos básicos de seguridad en el diseño:
 
-- Uso de `require_auth()` para validar identidad  
-- Validación de datos de entrada  
-- Prevención de ejecución incorrecta  
-- Control de acceso a funciones  
-
-Nota: Se considera la seguridad propia de Soroban, evitando malas prácticas en el diseño.
+- Verificación de identidad para ejecutar acciones  
+- Validación de datos antes de almacenarlos  
+- Prevención de ejecuciones indebidas  
+- Control en el acceso a funciones críticas  
 
 ---
 
-##  Integración con Aplicación
+##  Conectividad con Aplicaciones
 
-El contrato será diseñado para integrarse con una aplicación externa (frontend en Vue o scripts), permitiendo su uso dentro de la plataforma LOC-SERV.
+El contrato estará diseñado para ser utilizado desde una aplicación externa, permitiendo su integración con el sistema LOC-SERV.
 
-Se utilizarán herramientas como:
+Para ello se contempla el uso de:
 
-- Stellar SDK  
+- SDK de Stellar  
 - Billetera Freighter  
-- Conexión a TestNet  
+- Conexión directa a TestNet  
+
+Esto facilitará la interacción del usuario con la blockchain sin necesidad de conocimientos técnicos avanzados.
 
 ---
 
-##  Configuración del Entorno
+##  Preparación del Entorno de Desarrollo
 
-###  Herramientas utilizadas
+Para llevar a cabo el desarrollo se configuró el siguiente entorno:
 
+###  Tecnologías utilizadas
 - Rust  
 - Soroban SDK  
 - Stellar CLI  
-- Freighter Wallet  
+- Freighter  
 
 ###  Configuración realizada
-
-- Instalación de dependencias necesarias  
-- Configuración de acceso a TestNet  
-- Preparación del entorno para compilación y despliegue  
-- Verificación de conexión con la red  
-
----
-
-##  Pruebas Iniciales
-
-Se realizarán pruebas para validar:
-
-- Compilación correcta del contrato  
-- Funcionamiento en entorno local  
-- Preparación para despliegue en TestNet  
+- Instalación de herramientas necesarias  
+- Configuración de acceso a la red de prueba  
+- Validación de comandos de compilación  
+- Verificación de conexión con la blockchain  
 
 ---
 
-##  Conclusión
+##  Validación Inicial
 
-Este sprint permitirá establecer las bases de una arquitectura Web3 para la plataforma LOC-SERV, integrando un contrato inteligente funcional en la red TestNet de Stellar.
+Antes del despliegue, se realizarán pruebas para asegurar:
 
-Se busca lograr:
+- Correcta compilación del contrato  
+- Funcionamiento básico en entorno local  
+- Preparación adecuada para su publicación en TestNet  
 
-- Registro descentralizado de servicios  
-- Integración con aplicaciones externas  
-- Uso correcto de herramientas blockchain  
-- Preparación para pruebas y despliegue completo  
+---
+
+##  Consideraciones Finales
+
+Este sprint representa el primer paso hacia la incorporación de tecnología blockchain dentro de la plataforma LOC-SERV.
+
+Se espera que al finalizar:
+
+- El contrato esté listo para desplegarse en TestNet  
+- Se cuente con una base funcional para futuras integraciones  
+- Se establezca una estructura sólida para el desarrollo Web3  
