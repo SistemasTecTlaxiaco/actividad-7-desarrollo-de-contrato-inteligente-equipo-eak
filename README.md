@@ -58,7 +58,9 @@ El contrato contemplará funciones como:
 - El contrato debe compilar correctamente  
 - Debe permitir registrar información sin errores  
 - Debe responder correctamente a consultas  
-- La lógica debe ser clara y funcional  
+- La lógica debe ser clara y funcional
+<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/ff9633df-a436-4e6c-8751-76efd5289026" />
+
 
 ### 🔹 Seguridad
 Se considerarán aspectos básicos de seguridad en el diseño:
@@ -70,9 +72,11 @@ Se considerarán aspectos básicos de seguridad en el diseño:
 
 ---
 
-##  Conectividad con Aplicaciones
+##  Conectividad 
+<img width="1248" height="341" alt="image" src="https://github.com/user-attachments/assets/33942863-cd5f-4326-a50c-3d96f4461ce9" />
 
-El contrato estará diseñado para ser utilizado desde una aplicación externa, permitiendo su integración con el sistema LOC-SERV.
+
+El contrato estará diseñado para ser utilizado permitiendo su integración con el sistema LOC-SERV.
 
 Para ello se contempla el uso de:
 
